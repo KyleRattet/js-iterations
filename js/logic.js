@@ -1,15 +1,3 @@
-/*
-Hints for the first problem:
-  1. Define a function that:
-    - is assigned to a variable named `sum`
-    - has one parameter named `options`
-    - returns the calculated sum of all of the values of all of the options passed in
-NOTE: use a `for` loop to make this happen.
-*/
-
-//will be an array of all the selected values that need to get pushed to sum
-
-
 ////Prices
 //1. sumfunction
 function sum (options) {
@@ -19,7 +7,6 @@ function sum (options) {
   };
   return total;
 }
-
 //2.  count the selected prices
 function countSelected (options){
   var count = 0;
@@ -30,7 +17,6 @@ function countSelected (options){
   };
   return count;
 }
-
 //3.  sum selected
 function sumSelected (options) {
   var total = 0;
@@ -41,7 +27,6 @@ function sumSelected (options) {
   };
   return total;
 }
-
 //4. average all the prices
 function averagePrices (options) {
   var total = 0;
@@ -50,7 +35,6 @@ function averagePrices (options) {
   };
   return total/(options.length);
 }
-
 //5. average selected prices
 function averageSelected (options) {
   var total = 0;
@@ -63,6 +47,17 @@ function averageSelected (options) {
   };
   return total/(numberOfSelections);
 }
+
+
+///names
+
+//1. show all names, take in a string, return an array; input string of names ==> output arrays
+function stringToArray (string) {
+  var namesListArray  = string.split("\n");
+  return namesListArray;
+}
+
+
 
 
 
